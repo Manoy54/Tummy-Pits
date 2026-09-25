@@ -290,6 +290,12 @@ export default function Home() {
         // Step 3: Part curtains open smoothly to reveal Section 2
         const openTimer = setTimeout(() => {
           setCurtainState("opening");
+          
+          // Play the song precisely when the curtain opens
+          const audio = new Audio("/song/niki-buzz-official-lyric-video_LKoGxM0c.mp3");
+          audio.volume = 0.6;
+          audio.play().catch(err => console.log("Audio autoplay blocked:", err));
+
           const finishTimer = setTimeout(() => {
             setCurtainState("finished");
           }, 1300);
