@@ -422,7 +422,7 @@ export default function Home() {
       )}
 
       {projects
-        .filter((_, index) => (lockedSection2 ? index !== 0 : true))
+        .filter((_, index) => (lockedSection2 ? index !== 0 : index === 0))
         .map((project, actualIndex) => {
           const index = lockedSection2 ? actualIndex + 1 : actualIndex;
           return (
