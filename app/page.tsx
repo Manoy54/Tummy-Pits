@@ -238,8 +238,15 @@ export default function Home() {
   const [lockedSection2, setLockedSection2] = useState(false);
   const [scratchKey, setScratchKey] = useState(0);
 
-  // Alternate the two scratch photos on each reset.
-  const surpriseImages = ["/scratch/bango.jpg", "/scratch/ganda.jpg"];
+  // Alternate the scratch photos on each reset.
+  const surpriseImages = [
+    "/scratch/bango.jpg", 
+    "/scratch/ganda.jpg",
+    "/scratch/13cf640e-1c23-45b3-94af-fcca49adcc83.jpg",
+    "/scratch/416219bd-7c33-45ed-a7c7-17b177f34e67.jpg",
+    "/scratch/792c5562-85ef-47c4-bfe9-ce586b57f7af.jpg",
+    "/scratch/d31c39b1-c204-4b7c-9ebd-89d8922f8799.jpg"
+  ];
   const currentSurpriseImage = surpriseImages[scratchKey % surpriseImages.length];
 
   useEffect(() => {
