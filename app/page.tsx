@@ -611,7 +611,7 @@ export default function Home() {
                             Happy Birthday!
                           </h3>
                           <div className="pl-8 pr-4 space-y-6 font-[family-name:var(--font-cute)] text-[1.6rem] leading-[2.2rem] sm:text-2xl sm:leading-[2.4rem] text-slate-700">
-                            <p>It's your day, baby! Happiest birthday to you, my pretty princess.</p>
+                            <p>It's your day Sam, my baby! Happiest birthday to you, my pretty princess.</p>
                             <p>I'm so glad I get to be a part of your celebration this year, and even more grateful to call myself someone special to you. A year isn't very long, but I'm thankful for everything we've done and shared in our time together. Every moment with you feels amazing and exciting, no matter how simple it is. You've grown, learned, and pushed through things you doubted yourself about — and through all of it, I stayed grounded and believed in you, baby.</p>
                             <p>To my favorite teasing enemy, my small eater, my smarty-pants princess, my little menace who kicks and punches me for no reason, and my most supportive person — I wish you the best in every way, always. You're a ray of sunshine to me and to everyone around you. Your captivating smile brings joy to everyone, and the energy you bring lights up every room.</p>
                             <p className="italic font-semibold text-purple-800">Proverbs 31:29</p>

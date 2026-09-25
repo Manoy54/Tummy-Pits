@@ -12,7 +12,7 @@ export interface TextLoopProps {
 }
 
 export const TextLoop: React.FC<TextLoopProps> = ({
-  text = "NAUGHTY ✦ SWEET ✦ KIND ✦ SUPPORTIVE ✦ BANGO ✦ CUTE TUMMY ✦ YUMMY ✦ LOVELY ✦ SMART ✦ BULLY ✦ ",
+  text = "NAUGHTY ✦ SWEET ✦ KIND ✦ SUPPORTIVE ✦ BANGO KILI-KILI ✦ CUTE TUMMY ✦ YUMMY ✦ LOVELY ✦ SMART ✦ BULLY ✦ ",
   speed = 20,
   className = "",
   ribbonColor = "#6366f1",
