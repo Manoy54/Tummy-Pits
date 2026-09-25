@@ -613,15 +613,28 @@ export default function Home() {
                         {/* DIY Dog-Eared Folded Corner */}
                         <div className="absolute bottom-0 right-0 w-12 h-12 bg-slate-200 border-l border-t border-slate-300 shadow-sm rounded-tl-md pointer-events-none" />
 
-                        <div>
-                          <h3 className="text-4xl font-bold text-purple-950 font-[family-name:var(--font-cute)] mb-6 pl-8 pt-2">
-                            Happy Birthday!
-                          </h3>
-                          <div className="pl-8 pr-4 space-y-6 font-[family-name:var(--font-cute)] text-[1.6rem] leading-[2.2rem] sm:text-2xl sm:leading-[2.4rem] text-slate-700">
-                            <p>It's your day Sam, my baby! Happiest birthday to you, my pretty princess.</p>
-                            <p>I'm so glad I get to be a part of your celebration this year, and even more grateful to call myself someone special to you. A year isn't very long, but I'm thankful for everything we've done and shared in our time together. Every moment with you feels amazing and exciting, no matter how simple it is. You've grown, learned, and pushed through things you doubted yourself about — and through all of it, I stayed grounded and believed in you, baby.</p>
-                            <p>To my favorite teasing enemy, my small eater, my smarty-pants princess, my little menace who kicks and punches me for no reason, and my most supportive person — I wish you the best in every way, always. You're a ray of sunshine to me and to everyone around you. Your captivating smile brings joy to everyone, and the energy you bring lights up every room.</p>
-                            <p className="italic font-semibold text-purple-800">Proverbs 31:29</p>
+                        <div className="flex flex-col lg:flex-row gap-8 w-full z-10 pt-2">
+                          <div className="flex-1 flex flex-col justify-start">
+                            <h3 className="text-4xl font-bold text-purple-950 font-[family-name:var(--font-cute)] mb-6 pl-8">
+                              Happy Birthday!
+                            </h3>
+                            <div className="pl-8 pr-4 space-y-6 font-[family-name:var(--font-cute)] text-[1.6rem] leading-[2.2rem] sm:text-2xl sm:leading-[2.4rem] text-slate-700">
+                              <p>It's your day Sam, my baby! Happiest birthday to you, my pretty princess.</p>
+                              <p>I'm so glad I get to be a part of your celebration this year, and even more grateful to call myself someone special to you. A year isn't very long, but I'm thankful for everything we've done and shared in our time together. Every moment with you feels amazing and exciting, no matter how simple it is. You've grown, learned, and pushed through things you doubted yourself about — and through all of it, I stayed grounded and believed in you, baby.</p>
+                              <p>To my favorite teasing enemy, my small eater, my smarty-pants princess, my little menace who kicks and punches me for no reason, and my most supportive person — I wish you the best in every way, always. You're a ray of sunshine to me and to everyone around you. Your captivating smile brings joy to everyone, and the energy you bring lights up every room.</p>
+                              <p className="italic font-semibold text-purple-800">Proverbs 31:29</p>
+                            </div>
+                          </div>
+                          <div className="flex-1 flex items-center justify-center lg:pr-8 px-8 lg:px-0 mt-8 lg:mt-0">
+                            <div className="relative p-3 bg-white shadow-xl rotate-3 hover:rotate-0 transition-transform duration-500 border border-slate-200">
+                              <img 
+                                src="/main_card/436ef50a-54f9-4c1f-a4f2-4c98f935faa3 (1).jpg" 
+                                alt="Princess"
+                                className="w-full max-w-sm object-cover rounded-sm"
+                              />
+                              {/* Cute tape on the image */}
+                              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-white/70 shadow-sm -rotate-2 border border-white/40" />
+                            </div>
                           </div>
                         </div>
 
