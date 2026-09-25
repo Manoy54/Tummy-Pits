@@ -1,7 +1,7 @@
 "use client";
 
 import type { CSSProperties } from "react";
-import { useEffect, useState, Fragment } from "react";
+import { useEffect, useState, Fragment, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PaperTexture } from "@paper-design/shaders-react";
 import confetti from "canvas-confetti";
@@ -232,6 +232,7 @@ function ReferenceConstellation({
 }
 
 export default function Home() {
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [countdown, setCountdown] = useState(5);
   // curtainState: "open" | "closing" | "closed" | "opening" | "finished"
   const [curtainState, setCurtainState] = useState<"open" | "closing" | "closed" | "opening" | "finished">("open");
@@ -291,10 +292,11 @@ export default function Home() {
         const openTimer = setTimeout(() => {
           setCurtainState("opening");
           
-          // Play the song precisely when the curtain opens
-          const audio = new Audio("/song/niki-buzz-official-lyric-video_LKoGxM0c.mp3");
-          audio.volume = 0.6;
-          audio.play().catch(err => console.log("Audio autoplay blocked:", err));
+          // Play the preloaded song precisely when the curtain opens
+          if (audioRef.current) {
+            audioRef.current.volume = 0.6;
+            audioRef.current.play().catch(err => console.log("Audio play blocked:", err));
+          }
 
           const finishTimer = setTimeout(() => {
             setCurtainState("finished");
@@ -319,6 +321,8 @@ export default function Home() {
 
   return (
     <main className="relative w-full">
+      <audio ref={audioRef} preload="auto" src="/song/niki-buzz-official-lyric-video_LKoGxM0c.mp3" />
+      
       {/* Theater Curtains Overlay */}
       {curtainState !== "open" && curtainState !== "finished" && (
         <div className="pointer-events-none fixed inset-0 z-50 overflow-hidden">
